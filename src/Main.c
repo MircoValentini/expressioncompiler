@@ -243,6 +243,16 @@ main( int argc, char *argv[] )
 
   }
 
+  for ( int i=0; i<nFcns; i++ ) {
+    free( Fcns[i] );
+  }
+  free( Fcns );
+
+
+  for ( int i=0; i<nVars; i++ ) {
+    free( Vars[i] );
+  }
+  free( Vars );
 
   return 0;
 
